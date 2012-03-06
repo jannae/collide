@@ -29,7 +29,8 @@ void setup() {
 	m.display(r);
 }
 
-void draw() { //r = r + sin(frameCount / 4);
+void draw() { 
+	r = r + sin(frameCount / 4);
 
 	noStroke();
 	fill(10, 40);

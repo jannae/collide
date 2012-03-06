@@ -37,7 +37,7 @@ if(mobileDevice() == true)
     <script language="javascript" type="text/javascript" src="/_js/analytics.js"></script>
 	</head>
 	<body>
-		<div id="header"><h1>http://jann.ae/collide</h1></div>
+		<div id="header"><img src="iphone.png" width="75"/><h1>http://jann.ae/collide</h1></div>
 		<div id="mainContent">
 			<div id="printData"></div>
 		    <script id="sketch" type="application/processing" src="run.js"></script>
@@ -47,8 +47,8 @@ if(mobileDevice() == true)
 			<noscript>
 				<p>JavaScript is required to view the contents of this page.</p>
 			</noscript>
-			<div id="sources">Source code: <a href="run.js">ProcessingJS file</a> <a href="#">placeholder 2</a> | 
-			Built with <a href="http://processing.org" title="Processing">Processing</a> and <a href="http://processingjs.org" title="Processing.js">Processing.js</a></div>
+			<div id="sources">Source code: <a href="https://github.com/jannae/collide">Github Repo</a> | 
+			Built with <a href="http://processing.org" title="Processing">Processing</a>, <a href="http://processingjs.org" title="Processing.js">Processing.js</a> and <a href="http://jquery.com/" title="Processing.js">jQuery</a></div>
 	    </div>
 	</body>
 </html>
