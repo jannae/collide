@@ -9,7 +9,9 @@ function mobileDevice() {
 }
 
 if(mobileDevice() == true)
-	header('Location: /collide/m');
+	header('Location: m');
+	
+$dir = basename(dirname(__FILE__)); 
 ?>
 <!DOCTYPE html>
 
@@ -21,7 +23,7 @@ if(mobileDevice() == true)
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <title>Collide.</title>
+    <title><?=ucwords($dir)?>.</title>
 
     <link rel="stylesheet" type="text/css" href="/_css/reset.css">
     <link rel="stylesheet" type="text/css" href="main.css">
@@ -37,7 +39,7 @@ if(mobileDevice() == true)
     <script language="javascript" type="text/javascript" src="/_js/analytics.js"></script>
 	</head>
 	<body>
-		<div id="header"><img src="iphone.png" width="75"/><h1>http://jann.ae/collide</h1></div>
+		<div id="header"><img src="iphone.png" width="75"/><h1>http://jann.ae/<?=$dir?></h1></div>
 		<div id="mainContent">
 			<div id="printData"></div>
 		    <script id="sketch" type="application/processing" src="run.js"></script>
@@ -47,7 +49,7 @@ if(mobileDevice() == true)
 			<noscript>
 				<p>JavaScript is required to view the contents of this page.</p>
 			</noscript>
-			<div id="sources">Source code: <a href="https://github.com/jannae/collide">Github Repo</a> | 
+			<div id="sources">Source code: <a href="https://github.com/jannae/<?=$dir?>">Github Repo</a> | 
 			Built with <a href="http://processing.org" title="Processing">Processing</a>, <a href="http://processingjs.org" title="Processing.js">Processing.js</a> and <a href="http://jquery.com/" title="Processing.js">jQuery</a></div>
 	    </div>
 	</body>

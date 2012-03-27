@@ -1,3 +1,6 @@
+<?php 
+$dir = basename(dirname(__FILE__)); 
+?>
 <!DOCTYPE html>
 
 <html>
@@ -8,7 +11,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <title>Collide.</title>
+    <title><?=ucwords($dir)?>.</title>
 
     <!--link rel="stylesheet" type="text/css" href="/_css/reset.css"-->
     <link rel="stylesheet" type="text/css" href="../main.css">
@@ -76,7 +79,7 @@
 			document.getElementById("betalabel").innerHTML = "Beta: " + beta;
 			document.getElementById("gammalabel").innerHTML = "Gamma: " + gamma;
 			
-			$.get('/collide/data.php', {
+			$.get('../data.php', {
 				'go': 1,
 				'x': ax,
 				'y': ay,
@@ -101,7 +104,7 @@
     <script language="javascript" type="text/javascript" src="/_js/analytics.js"></script>
 	</head>
 	<body>
-		<div id="header"><h1>Collide.</h1></div>
+		<div id="header"><h1><?=ucwords($dir)?>.</h1></div>
 				
 	    <div id="mobileContent">
 		    <div class="box" id="accel">
